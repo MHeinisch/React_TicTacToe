@@ -100,6 +100,9 @@ function determineWinner(squares) {
   ];
   for(let i = 0; i < winningLines.length; i++){
     const [a, b, c] = winningLines[i];
+    // const a = winningLines[i][0];
+    // const b = winningLines[i][1];
+    // const c = winningLines[i][2];
     if(squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }
